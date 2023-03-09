@@ -27,6 +27,7 @@
   "orderedImports": true
 }
 ```
+
 |설정|내용|
 |---|---|
 |singleQuote|single 쿼테이션 이용 여부|
@@ -38,10 +39,43 @@
 |arrowParens|화살표 함수 괄호 표기 방식|
 |orderedImports|import 정렬 여부|
 
+### 📙 .tsconfig.json
+
+해당 파일은 **Typescript** [컴파일러 옵션](https://typescript-kr.github.io/pages/compiler-options.html)이 정의되어있는 파일입니다.
+
+본 **Boilerplate**에서는 다음 커맨드를 통해 생성한 ```.tsconfig.json```에서 수정한 설정파일을 사용합니다
+```
+  npx tsc --init
+```
+
+아래에 정의된 옵션 상세설명을 보려면 링크되어있는 문서를 참조
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noImplicitAny": false,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  }
+}
+```
+
 ## 🎁 Installation
 
 ```
- git clone https://github.com/HJ2Yoon/react-typescript-bolierplate.git ./(다운할 디렉토리)
+ git clone https://github.com/HJ2Yoon/react-typescript-bolierplate.git ./
 ```
 
 # License
