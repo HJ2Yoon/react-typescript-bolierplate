@@ -24,23 +24,23 @@ const GlobalStyle = createGlobalStyle`
 }
 
 @font-face {
-  font-family: 'Noto Sans KR';
+  font-family: 'NotoSansKR-Light';
   font-weight: 300;
-  src: url(./assets/fonts/NotoSansKR-Light.ttf) format('truetype');
+  src: local("NotoSansKR") url(./assets/fonts/NotoSansKR-Light.woff2) format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Noto Sans KR';
+  font-family: 'NotoSansKR-Regular';
   font-weight: 400;
-  src: url(./assets/fonts/NotoSansKR-Regular.ttf) format('truetype');
+  src: local("NotoSansKR") url(./assets/fonts/NotoSansKR-Regular.woff2) format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Noto Sans KR';
+  font-family: 'NotoSansKR-Bold';
   font-weight: 700;
-  src: url(./assets/fonts/NotoSansKR-Bold.ttf) format('truetype');
+  src: local("NotoSansKR") url(./assets/fonts/NotoSansKR-Bold.woff2) format('woff2');
   font-display: swap;
 }
 
