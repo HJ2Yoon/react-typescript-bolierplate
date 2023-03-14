@@ -4,13 +4,7 @@ import reset from 'styled-reset';
 const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'Roboto Mono';
-  font-weight: 300;
-  src: url(./assets/fonts/RobotoMono-Light.ttf) format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto Mono';
+  font-style: normal;
   font-weight: 400;
   src: url(./assets/fonts/RobotoMono-Regular.ttf) format('truetype');
   font-display: swap;
@@ -18,27 +12,23 @@ const GlobalStyle = createGlobalStyle`
 
 @font-face {
   font-family: 'Roboto Mono';
+  font-style: bold;
   font-weight: 700;
   src: url(./assets/fonts/RobotoMono-Bold.ttf) format('truetype');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'NotoSansKR-Light';
-  font-weight: 300;
-  src: local("NotoSansKR") url(./assets/fonts/NotoSansKR-Light.woff2) format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'NotoSansKR-Regular';
+  font-family: 'Noto Sans KR';
+  font-style: normal;
   font-weight: 400;
   src: local("NotoSansKR") url(./assets/fonts/NotoSansKR-Regular.woff2) format('woff2');
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'NotoSansKR-Bold';
+  font-family: 'Noto Sans KR';
+  font-style: bold;
   font-weight: 700;
   src: local("NotoSansKR") url(./assets/fonts/NotoSansKR-Bold.woff2) format('woff2');
   font-display: swap;
