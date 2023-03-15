@@ -1,46 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import './assets/fonts/Font.css';
 
 const GlobalStyle = createGlobalStyle`
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: url(./assets/fonts/RobotoMono-Regular.ttf) format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Roboto Mono';
-  font-style: bold;
-  font-weight: 700;
-  src: url(./assets/fonts/RobotoMono-Bold.ttf) format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 400;
-  src: local("NotoSansKR") url(./assets/fonts/NotoSansKR-Regular.woff2) format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: bold;
-  font-weight: 700;
-  src: local("NotoSansKR") url(./assets/fonts/NotoSansKR-Bold.woff2) format('woff2');
-  font-display: swap;
-}
-
-/*
-    Web Fonts from Google Fonts
-  
-    Use the following CSS rules to specify these families:
-    font-family: 'Roboto Mono', sans-serif; 300 400 700
-	font-family: 'Nato Sans KR', sans-serif; 300 400 700
-*/
 
 ${reset}
 
@@ -60,7 +22,7 @@ a, dl, dt, dd, ol, ul, li, form, label, table {
 }
 body {
   line-height: 1;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
 }
 ol, ul {
   list-style: none;
