@@ -8,8 +8,10 @@
 |react|**^18.2.0**|
 |react-dom|**^18.2.0**|
 |react-router|**^6.8.2**|
+|react-query|**^3.39.3**|
 |react-scripts|**5.0.1**|
 |styled-components|**^5.3.8**|
+|typescript|**^4.9.5**|
 
 ## 📚 Configuration
 
@@ -72,7 +74,36 @@
 }
 ```
 
-## 🎁 Installation
+### 📒 Font.css
+
+**Boilerplate**의 `Font.css`에서는 `assets/fonts` 내부 라이브러리에 있는 폰트 파일을 선언한 css입니다.
+
+## Noto Sans Korean
+|Style|Weight|
+|-----|------|
+|normal|400|
+|bold|700|
+
+### Fromat
+`woff2`
+
+### License
+You can use them in your products & projects – print or digital, commercial or otherwise.
+
+## Roboto Mono
+|Style|Weight|
+|-----|------|
+|normal|400|
+|bold|700|
+
+### Format
+`tff`
+
+### License
+You can use them in your products & projects – print or digital, commercial or otherwise.
+
+
+## 🎁 Installation 
 
 ```
  git clone https://github.com/HJ2Yoon/react-typescript-bolierplate.git ./
