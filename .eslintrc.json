@@ -5,8 +5,9 @@
     "node": true
   },
   "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
+    "prettier",
+    "airbnb",
+    "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
@@ -33,6 +34,8 @@
     "semi": ["error", "never"],
     "no-extra-semi": "error",
     "no-tabs": ["error", { "allowIndentationTabs": true }],
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off"
   }
 }
