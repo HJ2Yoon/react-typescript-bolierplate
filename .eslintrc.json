@@ -5,10 +5,8 @@
     "node": true
   },
   "extends": [
-    "prettier",
-    "airbnb",
-    "airbnb/hooks",
-    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
   "settings": {
@@ -16,7 +14,6 @@
       "version": "detect"
     }
   },
-  "overrides": [],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -25,17 +22,9 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "react/react-in-jsx-scope": "off",
-    "indent": ["error", 4],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "never"],
-    "no-extra-semi": "error",
-    "no-tabs": ["error", { "allowIndentationTabs": true }],
-    "prettier/prettier": "error",
-    "arrow-body-style": "off",
-    "prefer-arrow-callback": "off"
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
   }
 }
