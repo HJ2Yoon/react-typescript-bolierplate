@@ -25,7 +25,7 @@
   "tabWidth": 2,
   "trailingComma": "all",
   "printWidth": 80,
-  "arrowParens": "always",
+  "arrowParens": "avoid",
   "orderedImports": true
 }
 ```
@@ -56,20 +56,17 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "noImplicitAny": false,
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+    "module": "ESNext", 
+    "jsx": "preserve", 
+    "strict": true, 
+    "noImplicitAny": true, 
+    "strictNullChecks": true, 
+    "allowJs": true, 
+    "checkJs": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "isolatedModules": true
   }
 }
 ```
