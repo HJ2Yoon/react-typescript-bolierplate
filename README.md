@@ -45,7 +45,7 @@
 
 해당 파일은 **Typescript** [컴파일러 옵션](https://typescript-kr.github.io/pages/compiler-options.html)이 정의되어있는 파일입니다.
 
-본 **Boilerplate**에서는 다음 커맨드를 통해 생성한 ```.tsconfig.json```에서 수정한 설정파일을 사용합니다
+본 **Boilerplate**에서는 다음 커맨드를 통해 생성한 `.tsconfig.json`에서 수정한 설정파일을 사용합니다.
 ```
   npx tsc --init
 ```
@@ -71,7 +71,51 @@
 }
 ```
 
-### 📒 Font.css
+### 📒 .eslintrc.json 
+
+해당 **Boilerplate**는 ESLint + `eslint-plugin-prettier` + `eslint-config-prettier`와 같이 사용하고
+**Eslint Ruled**은 `Standard`를 사용하고 있습니다.
+추가적으로 Typescript lint를 위해 `typescript-eslint`을 사용하고있습니다.
+
+```json
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
+  }
+}
+```
+`@typescript-eslint/explicit-module-boundary-types` **Typescript** 규칙 중 반환 타입을 명시하는 설정을 OFF했습니다.
+<br>
+( rule means that you need to explicitly tell Typescript what is being returned )
+
+### 📗 Font.css
 
 **Boilerplate**의 `Font.css`에서는 `assets/fonts` 내부 라이브러리에 있는 폰트 파일을 선언한 css입니다.
 
