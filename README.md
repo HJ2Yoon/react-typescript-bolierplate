@@ -12,6 +12,7 @@
 |react-scripts|**5.0.1**|
 |styled-components|**^5.3.8**|
 |typescript|**^4.9.5**|
+|recoil|**^0.7.7**|
 
 ## 📚 Configuration
 
