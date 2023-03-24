@@ -2,7 +2,9 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "ESNext", //무슨 import 문법 쓸건지 'commonjs', 'amd', 'es2015', 'esnext'
-    "jsx": "preserve", // tsx 파일을 jsx로 어떻게 컴파일할 것인지 'preserve', 'react-native', 'react'
+    "rootDir": "./src",
+    "outDir": "./dist/esm",
+    "jsx": "react-jsx", // tsx 파일을 jsx로 어떻게 컴파일할 것인지 'preserve', 'react-native', 'react'
     "strict": true, //strict 관련, noimplicit 어쩌구 관련 모드 전부 켜기
     "noImplicitAny": true, //any타입 금지 여부
     "strictNullChecks": true, //null, undefined 타입에 이상한 짓 할시 에러내기
@@ -12,5 +14,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true
-  }
+  },
+  "include": ["src/**/*.tsx"],
+  "exclude": ["dist", "node_modules"]
 }
