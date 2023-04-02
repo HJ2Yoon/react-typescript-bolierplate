@@ -14,6 +14,5 @@ ReactDOM.createRoot(root).render(
       <GlobalStyle />
       <App />
     </QueryClientProvider>
-    ,
   </RecoilRoot>,
 );
