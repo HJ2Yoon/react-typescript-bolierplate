@@ -1,10 +1,22 @@
 {
-  "editor.formatOnPaste": false, // required
-  "editor.formatOnType": false, // required
+  // auto formatting on paste text
+  "editor.formatOnPaste": false,
+
+  // auto formatting on input semicolon
+  "editor.formatOnType": false,
+
+  // auto formatting on save file
   "editor.formatOnSave": true,
+
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+
+  // add file type to lint by esLint
+  "eslint.validate": ["typescript", "typescriptreact"],
+
+  // set default formatter to each file type js,jsx,ts,tsx
+  // this config will apply prettier
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -16,6 +28,5 @@
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "eslint.validate": ["typescript", "typescriptreact"]
+  }
 }
