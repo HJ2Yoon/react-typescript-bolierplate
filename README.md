@@ -57,17 +57,22 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "ESNext", 
-    "jsx": "preserve", 
-    "strict": true, 
-    "noImplicitAny": true, 
-    "strictNullChecks": true, 
-    "allowJs": true, 
+    "module": "ESNext",
+    "baseUrl": "./src",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "strict": true,
+    "noEmit": true,
     "checkJs": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }
 ```
